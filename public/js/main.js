@@ -27,6 +27,7 @@ function update_cpu_gpu (cpu_load, gpu_load) {
 }
 
 const gpu_temp = document.getElementById('ram')
+const fmtGB = (mb) => (mb / 1024).toFixed(2).replace(/(\.\d)0$/, '$1')
 function update_ram (total, use) {
-    gpu_temp.innerHTML = `[${zeroPad(Math.round(use), 5)} / ${Math.round(total)} MB]`
+    gpu_temp.innerHTML = `[${fmtGB(use)}/${fmtGB(total)}GB]`
 }
