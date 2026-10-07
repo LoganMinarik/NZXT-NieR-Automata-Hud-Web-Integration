@@ -136,6 +136,12 @@ main {
   margin-bottom: 1rem;
 }
 
+.content--svg {
+  display: flex;
+  justify-content: center;
+  padding-right: 3rem;
+}
+
 sys {
   box-shadow: 3px 3px 0 rgba(77, 73, 62, 0.6);
 }
